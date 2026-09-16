@@ -16,5 +16,8 @@ public class ProductPage {
 	
 	@FindBy(xpath = "//*[@alt='Create Product...']")
 	private WebElement createNewProductBtn;
+	
+	@FindBy(name = "search_text")
+	private WebElement ele2;
 
 }

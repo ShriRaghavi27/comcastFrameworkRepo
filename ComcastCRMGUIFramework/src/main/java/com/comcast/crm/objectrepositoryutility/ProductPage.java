@@ -18,6 +18,6 @@ public class ProductPage {
 	private WebElement createNewProductBtn;
 	
 	@FindBy(name = "search_text")
-	private WebElement ele2;
+	private WebElement ele1;
 
 }

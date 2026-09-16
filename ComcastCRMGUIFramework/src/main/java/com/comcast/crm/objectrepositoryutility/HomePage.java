@@ -25,6 +25,9 @@ public class HomePage extends WebDriverUtility{
 	@FindBy(linkText = "Campaigns")
 	private WebElement CampaignLink;
 	
+	@FindBy(linkText = "Products")
+	private WebElement proLink;
+	
 	@FindBy(linkText = "More")
 	private WebElement MoreLink;
 	

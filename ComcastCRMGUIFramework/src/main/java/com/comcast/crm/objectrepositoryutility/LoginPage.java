@@ -45,6 +45,7 @@ public class LoginPage extends WebDriverUtility{
 		usernameEdt.sendKeys(username);
 		passwordEdt.sendKeys(password);
 		loginBtn.click();
+		System.out.println("Successfully login");
 	}
 	
 }

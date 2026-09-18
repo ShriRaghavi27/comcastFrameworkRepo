@@ -8,11 +8,6 @@
 					<include name="createContactWithOrgTest"></include>
 				</methods>
 			</class>
-			<class name="com.comcast.crm.orgtest.CreateOrganizationTest">
-				<methods>
-					<include name="creatOrgTest"></include>
-				</methods>
-			</class>
 		</classes>
 	</test> <!--
 	Test -->

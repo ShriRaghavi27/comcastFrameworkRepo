@@ -19,5 +19,8 @@ public class ProductPage {
 	
 	@FindBy(name = "search_text")
 	private WebElement ele1;
+	
+	@FindBy(name = "search_text")
+	private WebElement ele2;
 
 }

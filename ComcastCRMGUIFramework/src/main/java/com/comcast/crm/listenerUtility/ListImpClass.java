@@ -40,25 +40,19 @@ public class ListImpClass implements ITestListener, ISuiteListener {
 		report.setSystemInfo("OS", "windows-11");
 		report.setSystemInfo("BROWSER", "CHROME-115");
 	}
-
-	
-
 	@Override
 	public void onTestStart(ITestResult result) {
 		System.out.println("========" + result.getMethod().getMethodName() + "===START====");
 		test = report.createTest(result.getMethod().getMethodName());
 		UtilityClassObject.setTest(test);
-		UtilityClassObject.getTest().log(Status.INFO, result.getMethod().getMethodName() + "===STARTED====");
+		UtilityClassObject.getTest().log(Status.INFO, result.getMethod().getMethodName()+ "===STARTED====");
 		
 	}
-
 	@Override
 	public void onTestSuccess(ITestResult result) {
-
 		System.out.println("========" + result.getMethod().getMethodName() + "===END====");
 		UtilityClassObject.getTest().log(Status.PASS, result.getMethod().getMethodName() + "===COMPLETED====");
 	}
-
 	@Override
 	public void onTestFailure(ITestResult result) {
 		String testName = result.getMethod().getMethodName();
@@ -69,7 +63,6 @@ public class ListImpClass implements ITestListener, ISuiteListener {
 		UtilityClassObject.getTest().addScreenCaptureFromBase64String(filepath, testName + "_" + time);
 		UtilityClassObject.getTest().log(Status.FAIL, result.getMethod().getMethodName() + "===FAILED====");
 	}
-
 	@Override
 	public void onTestSkipped(ITestResult result) {
 

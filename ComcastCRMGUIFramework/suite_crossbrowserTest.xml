@@ -11,7 +11,6 @@
   <parameter name="BROWSER" value="edge"></parameter>
     <classes>
       <class name="com.comcast.crm.contacttest.CreateContactTest"/>
-      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
